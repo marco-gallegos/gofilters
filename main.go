@@ -171,6 +171,154 @@ func getManufacturerValues(filters []types.FilterSectionItem) []string {
 // 	// ...
 // }
 
+func groupByGroupId(data []types.FilterSectionItem) []types.FiltersToSearch {
+	grouped := make(map[string]types.FiltersToSearch)
+
+	for _, item := range data {
+		groupId := item.GroupID
+
+		if _, ok := grouped[groupId]; !ok {
+			var newGrouped types.FiltersToSearch
+			newGrouped.GroupID = groupId
+			newGrouped.Filters = []string{}
+			grouped[groupId] = newGrouped
+		}
+
+		if entry, ok := grouped[groupId]; ok {
+			entry.Filters = append(grouped[groupId].Filters, item.Value)
+
+			grouped[groupId] = entry
+		}
+	}
+
+	if len(grouped) > 0 {
+		var result []types.FiltersToSearch
+		for _, item := range grouped {
+			result = append(result, item)
+		}
+		return result
+	}
+
+	return nil
+}
+
+// func getArticlesFiltered(
+// 	filtersToSearch []types.FiltersToSearch,
+// 	value types.Attribute,
+// 	filteredArticles []types.CpArticleComponent,
+// 	manufacturers []string,
+// 	serach string,
+// 	price types.PriceRange,
+// 	onlyStock bool,
+// 	storageType []string,
+// ) []types.CpArticleComponent {
+// 	return filteredArticles
+// }
+
+// START ==================>
+func hasMatchingFilter(filters, articleFilters []string) bool {
+	for _, filter := range filters {
+		for _, articleFilter := range articleFilters {
+			if filter == articleFilter {
+				return true
+			}
+		}
+	}
+	return false
+}
+
+func filtersConditions(
+	article types.CpArticleComponent,
+	hasValue bool,
+	manufacturers []string,
+	search string,
+	price *types.PriceRange,
+	onlyStock bool,
+	storageType []string,
+) bool {
+	hasAManufacturer := contains(manufacturers, article.Attributes.Manufacturer)
+	priceISInrange := (article.Attributes.Price >= price.Min && article.Attributes.Price <= price.Max)
+
+	// TODO: there exist more logic
+	if len(manufacturers) > 0 && price != nil && onlyStock {
+		if hasValue &&
+			hasAManufacturer &&
+			article.Attributes.Stock > 0 &&
+			priceISInrange {
+			return true
+		}
+	} else {
+		if len(manufacturers) > 0 && price != nil && len(storageType) > 0 {
+			if hasValue &&
+				hasAManufacturer &&
+				contains(storageType, article.Attributes.TypeStorage) &&
+				priceISInrange {
+				return true
+			}
+		}
+	}
+	return false
+}
+
+func getArticlesFiltered(
+	filtersToSearch []types.FiltersToSearch,
+	value types.Attribute,
+	filteredArticles []types.CpArticleComponent,
+	manufacturers []string,
+	search string,
+	price types.PriceRange,
+	onlyStock bool,
+	storageType []string,
+) []types.CpArticleComponent {
+	var filteredArticlesData []types.CpArticleComponent
+
+	if len(filtersToSearch) > 0 {
+		for _, filterToSearch := range filtersToSearch {
+			ignoreFiltersApplied := contains(filterToSearch.Filters, value.Value) || filterToSearch.GroupID == ""
+
+			for _, article := range filteredArticles {
+				var articleFilters []string
+				for _, filter := range article.Attributes.Attributes {
+					articleFilters = append(articleFilters, filter.Value)
+				}
+				filters := filterToSearch.Filters
+				hasValue := false
+
+				if ignoreFiltersApplied {
+					hasValue = contains(articleFilters, value.Value)
+				} else {
+					// filter some is the same ??
+					if hasMatchingFilter(filters, articleFilters) {
+						hasValue = true
+					}
+				}
+
+				added := filtersConditions(article, hasValue, manufacturers, search, &price, onlyStock, storageType)
+
+				if added {
+					filteredArticlesData = append(filteredArticlesData, article)
+				}
+			}
+		}
+	} else {
+
+	}
+
+	return filteredArticlesData
+}
+
+// func filterArticles(articles []types.CpArticleComponent, filter func(types.CpArticleComponent, int) bool, ignoreFilters bool) []types.CpArticleComponent {
+// 	var result []types.CpArticleComponent
+// 	for i, article := range articles {
+// 		if filter(article, i) && (!ignoreFilters || len(filtersToSearch) == 0) {
+// 				result = append(result, article)
+// 		}
+// 	}
+// 	return result
+// }
+
+// END ==================>
+
 func countArticleaFilter(
 	articles []types.CpArticleComponent,
 	value types.Attribute,
@@ -187,9 +335,42 @@ func countArticleaFilter(
 	}
 	// lowerSearch := search
 
-	// fmt.Println(manufacturers[0], "==<")
+	var tempFiltersApplied []types.FilterSectionItem
+	for _, filterApplied := range filtersApplied {
+		for _, filter := range filterApplied.Filters {
+			tempFiltersApplied = append(tempFiltersApplied, filter)
+		}
+	}
 
-	return len(manufacturers)
+	var newFilterApplied types.FilterSectionItem
+	newFilterApplied.Category = ""
+	newFilterApplied.Count = 0
+	newFilterApplied.GroupID = value.ID
+	newFilterApplied.Selected = false
+	newFilterApplied.Title = ""
+	newFilterApplied.Value = value.Value
+	tempFiltersApplied = append(tempFiltersApplied, newFilterApplied)
+
+	var filtersToSearch []types.FiltersToSearch
+
+	filtersToSearch = groupByGroupId(tempFiltersApplied)
+
+	// fmt.Println("lens de grouped and no grouped", len(filtersToSearch), len(tempFiltersApplied))
+
+	var filteredArticles []types.CpArticleComponent
+
+	filteredArticles = getArticlesFiltered(
+		filtersToSearch,
+		value,
+		articles,
+		manufacturers,
+		search, // not implemented
+		price,
+		onlyStock,
+		storageType,
+	)
+
+	return len(filteredArticles)
 }
 
 // Función para procesar los datos según los filtros
@@ -344,6 +525,6 @@ func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/filters", handleFilters).Methods("POST")
 
-	fmt.Println("Server listening on port 8080")
-	http.ListenAndServe(":8080", r)
+	fmt.Println("Server listening on port 9999")
+	http.ListenAndServe(":9999", r)
 }

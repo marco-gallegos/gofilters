@@ -131,3 +131,13 @@ type PriceRange struct {
 	Min float64 `json:"min"`
 	Max float64 `json:"max"`
 }
+
+type FiltersToSearch struct {
+	GroupID string
+	Filters []string
+}
+
+// type Grouped struct {
+// 	Key     string
+// 	Filters FilterSectionItem
+// }
