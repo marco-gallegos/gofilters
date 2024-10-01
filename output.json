@@ -1,0 +1,630 @@
+[
+    {
+        "id": "manufacturer",
+        "title": "Marca",
+        "checkBoxes": [
+            {
+                "title": "ACER",
+                "value": "ACER",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 6
+            },
+            {
+                "title": "ADATA",
+                "value": "ADATA",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 9
+            },
+            {
+                "title": "CORSAIR",
+                "value": "CORSAIR",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 54
+            },
+            {
+                "title": "CRUCIAL",
+                "value": "CRUCIAL",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 4
+            },
+            {
+                "title": "G.SKILL",
+                "value": "G.SKILL",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 24
+            },
+            {
+                "title": "HIKSEMI",
+                "value": "HIKSEMI",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 2
+            },
+            {
+                "title": "HP",
+                "value": "HP",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 2
+            },
+            {
+                "title": "HP ENTERPRISE",
+                "value": "HP ENTERPRISE",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 1
+            },
+            {
+                "title": "KINGSTON",
+                "value": "KINGSTON",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 279
+            },
+            {
+                "title": "LEXAR",
+                "value": "LEXAR",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 1
+            },
+            {
+                "title": "PATRIOT",
+                "value": "PATRIOT",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 20
+            },
+            {
+                "title": "PNY",
+                "value": "PNY",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 1
+            },
+            {
+                "title": "TEAM GROUP",
+                "value": "TEAM GROUP",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 41
+            },
+            {
+                "title": "XPG",
+                "value": "XPG",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 13
+            },
+            {
+                "title": "XTREME PC GAMING",
+                "value": "XTREME PC GAMING",
+                "selected": false,
+                "category": "",
+                "groupId": "",
+                "count": 2
+            }
+        ]
+    },
+    {
+        "id": "084baab19a67b3e92f3b35c5e5d52625",
+        "title": "Latencia CAS",
+        "checkBoxes": [
+            {
+                "title": "CL19",
+                "value": "CL19",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 2
+            },
+            {
+                "title": "30",
+                "value": "30",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 2
+            },
+            {
+                "title": "32",
+                "value": "32",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 3
+            },
+            {
+                "title": "34",
+                "value": "34",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 1
+            },
+            {
+                "title": "CL30",
+                "value": "CL30",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 35
+            },
+            {
+                "title": "CL32",
+                "value": "CL32",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 72
+            },
+            {
+                "title": "CL34",
+                "value": "CL34",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 12
+            },
+            {
+                "title": "CL36",
+                "value": "CL36",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 99
+            },
+            {
+                "title": "36",
+                "value": "36",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 3
+            },
+            {
+                "title": "CL38",
+                "value": "CL38",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 54
+            },
+            {
+                "title": "38",
+                "value": "38",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 5
+            },
+            {
+                "title": "CL39",
+                "value": "CL39",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 1
+            },
+            {
+                "title": "40",
+                "value": "40",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 10
+            },
+            {
+                "title": "CL40",
+                "value": "CL40",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 135
+            },
+            {
+                "title": "CL42",
+                "value": "CL42",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 6
+            },
+            {
+                "title": "CL44",
+                "value": "CL44",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 1
+            },
+            {
+                "title": "CL45",
+                "value": "CL45",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 1
+            },
+            {
+                "title": "CL46",
+                "value": "CL46",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 15
+            },
+            {
+                "title": "46",
+                "value": "46",
+                "selected": false,
+                "category": "Latencia CAS",
+                "groupId": "084baab19a67b3e92f3b35c5e5d52625",
+                "count": 2
+            }
+        ]
+    },
+    {
+        "id": "46f2d27ae285db89446a4a988adb4fac",
+        "title": "Voltaje de memoria",
+        "checkBoxes": [
+            {
+                "title": "1.1,1.45 V",
+                "value": "1.1,1.45 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 2
+            },
+            {
+                "title": "1.1,1.35,1.45 V",
+                "value": "1.1,1.35,1.45 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 2
+            },
+            {
+                "title": "1.1,1.25,1.35 V",
+                "value": "1.1,1.25,1.35 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 4
+            },
+            {
+                "title": "1.1,1.4 V",
+                "value": "1.1,1.4 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 9
+            },
+            {
+                "title": "1.1,1.35 V",
+                "value": "1.1,1.35 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 2
+            },
+            {
+                "title": "1.1 V",
+                "value": "1.1 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 71
+            },
+            {
+                "title": "1.2 V",
+                "value": "1.2 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 8
+            },
+            {
+                "title": "1.25 V",
+                "value": "1.25 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 124
+            },
+            {
+                "title": "1.3 V",
+                "value": "1.3 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 5
+            },
+            {
+                "title": "1.35,1.4 V",
+                "value": "1.35,1.4 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 2
+            },
+            {
+                "title": "1.35 V",
+                "value": "1.35 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 104
+            },
+            {
+                "title": "1.4 V",
+                "value": "1.4 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 80
+            },
+            {
+                "title": "1.45 V",
+                "value": "1.45 V",
+                "selected": false,
+                "category": "Voltaje de memoria",
+                "groupId": "46f2d27ae285db89446a4a988adb4fac",
+                "count": 32
+            }
+        ]
+    },
+    {
+        "id": "541dee00ceec9f3c35d1c82e8d8cde89",
+        "title": "Tipo de memoria interna",
+        "checkBoxes": [
+            {
+                "title": "DDR5",
+                "value": "DDR5",
+                "selected": false,
+                "category": "Tipo de memoria interna",
+                "groupId": "541dee00ceec9f3c35d1c82e8d8cde89",
+                "count": 459
+            }
+        ]
+    },
+    {
+        "id": "56d9cf36c2c9295c47e28238fda80532",
+        "title": "Memoria RAM",
+        "checkBoxes": [
+            {
+                "title": "8GB",
+                "value": "8GB",
+                "selected": false,
+                "category": "Memoria RAM",
+                "groupId": "56d9cf36c2c9295c47e28238fda80532",
+                "count": 27
+            },
+            {
+                "title": "16 GB",
+                "value": "16 GB",
+                "selected": false,
+                "category": "Memoria RAM",
+                "groupId": "56d9cf36c2c9295c47e28238fda80532",
+                "count": 1
+            },
+            {
+                "title": "16GB",
+                "value": "16GB",
+                "selected": false,
+                "category": "Memoria RAM",
+                "groupId": "56d9cf36c2c9295c47e28238fda80532",
+                "count": 119
+            },
+            {
+                "title": "24GB",
+                "value": "24GB",
+                "selected": false,
+                "category": "Memoria RAM",
+                "groupId": "56d9cf36c2c9295c47e28238fda80532",
+                "count": 4
+            },
+            {
+                "title": "32GB",
+                "value": "32GB",
+                "selected": false,
+                "category": "Memoria RAM",
+                "groupId": "56d9cf36c2c9295c47e28238fda80532",
+                "count": 210
+            },
+            {
+                "title": "48GB",
+                "value": "48GB",
+                "selected": false,
+                "category": "Memoria RAM",
+                "groupId": "56d9cf36c2c9295c47e28238fda80532",
+                "count": 24
+            },
+            {
+                "title": "64 GB",
+                "value": "64 GB",
+                "selected": false,
+                "category": "Memoria RAM",
+                "groupId": "56d9cf36c2c9295c47e28238fda80532",
+                "count": 1
+            },
+            {
+                "title": "64GB",
+                "value": "64GB",
+                "selected": false,
+                "category": "Memoria RAM",
+                "groupId": "56d9cf36c2c9295c47e28238fda80532",
+                "count": 63
+            },
+            {
+                "title": "96GB",
+                "value": "96GB",
+                "selected": false,
+                "category": "Memoria RAM",
+                "groupId": "56d9cf36c2c9295c47e28238fda80532",
+                "count": 9
+            },
+            {
+                "title": "128GB",
+                "value": "128GB",
+                "selected": false,
+                "category": "Memoria RAM",
+                "groupId": "56d9cf36c2c9295c47e28238fda80532",
+                "count": 1
+            }
+        ]
+    },
+    {
+        "id": "ad06ad49dbd545e0b0426f32bbfc33b7",
+        "title": "Velocidad de memoria del reloj",
+        "checkBoxes": [
+            {
+                "title": "4800MHz",
+                "value": "4800MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 40
+            },
+            {
+                "title": "5200 MHz",
+                "value": "5200 MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 1
+            },
+            {
+                "title": "5200MHz",
+                "value": "5200MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 80
+            },
+            {
+                "title": "5600MHz",
+                "value": "5600MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 89
+            },
+            {
+                "title": "6000MHz",
+                "value": "6000MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 124
+            },
+            {
+                "title": "6000 MHz",
+                "value": "6000 MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 1
+            },
+            {
+                "title": "6200MHz",
+                "value": "6200MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 2
+            },
+            {
+                "title": "6400MHz",
+                "value": "6400MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 50
+            },
+            {
+                "title": "6600MHz",
+                "value": "6600MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 6
+            },
+            {
+                "title": "6800MHz",
+                "value": "6800MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 18
+            },
+            {
+                "title": "7000 MHz",
+                "value": "7000 MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 3
+            },
+            {
+                "title": "7200MHz",
+                "value": "7200MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 18
+            },
+            {
+                "title": "7600MHz",
+                "value": "7600MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 10
+            },
+            {
+                "title": "7800MHz",
+                "value": "7800MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 2
+            },
+            {
+                "title": "8000MHz",
+                "value": "8000MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 14
+            },
+            {
+                "title": "8200MHz",
+                "value": "8200MHz",
+                "selected": false,
+                "category": "Velocidad de memoria del reloj",
+                "groupId": "ad06ad49dbd545e0b0426f32bbfc33b7",
+                "count": 1
+            }
+        ]
+    }
+]
